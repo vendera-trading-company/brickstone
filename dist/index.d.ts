@@ -1,3 +1,4 @@
 import "./style.css";
 import ButtonSolid from "./components/button/Solid.vue";
-export { ButtonSolid };
+import ButtonOutline from "./components/button/Outline.vue";
+export { ButtonSolid, ButtonOutline };

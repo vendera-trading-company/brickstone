@@ -1,17 +1,75 @@
 <template>
-  <div class="flex flex-wrap gap-4 items-center justify-center">
-    <ButtonSolid type="primary">Hello World!</ButtonSolid>
-    <ButtonSolid type="secondary">Hello World!</ButtonSolid>
+  <p class="mt-12">Solid</p>
+  <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
+    <div class="flex flex-col items-center justify-center gap-4">
+      <ButtonSolid size="lg" disabled type="primary">Hello World!</ButtonSolid>
+      <ButtonSolid size="lg" type="primary">Hello World!</ButtonSolid>
+      <ButtonSolid type="primary">Hello World!</ButtonSolid>
+      <ButtonSolid size="sm" type="primary">Hello World!</ButtonSolid>
+      <ButtonSolid size="xs" type="primary">Hello World!</ButtonSolid>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-4">
+      <ButtonSolid size="lg" disabled type="secondary">Hello World!</ButtonSolid>
+      <ButtonSolid size="lg" type="secondary">Hello World!</ButtonSolid>
+      <ButtonSolid type="secondary">Hello World!</ButtonSolid>
+      <ButtonSolid size="sm" type="secondary">Hello World!</ButtonSolid>
+      <ButtonSolid size="xs" type="secondary">Hello World!</ButtonSolid>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-4">
+      <ButtonSolid size="lg" disabled type="neutral">Hello World!</ButtonSolid>
+      <ButtonSolid size="lg" type="neutral">Hello World!</ButtonSolid>
+      <ButtonSolid type="neutral">Hello World!</ButtonSolid>
+      <ButtonSolid size="sm" type="neutral">Hello World!</ButtonSolid>
+      <ButtonSolid size="xs" type="neutral">Hello World!</ButtonSolid>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-4">
+      <ButtonSolid size="lg" disabled type="invert">Hello World!</ButtonSolid>
+      <ButtonSolid size="lg" type="invert">Hello World!</ButtonSolid>
+      <ButtonSolid type="invert">Hello World!</ButtonSolid>
+      <ButtonSolid size="sm" type="invert">Hello World!</ButtonSolid>
+      <ButtonSolid size="xs" type="invert">Hello World!</ButtonSolid>
+    </div>
+  </div>
+  <p class="mt-12">Outline</p>
+  <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
+    <div class="flex flex-col items-center justify-center gap-4">
+      <ButtonOutline size="lg" disabled type="primary">Hello World!</ButtonOutline>
+      <ButtonOutline size="lg" type="primary">Hello World!</ButtonOutline>
+      <ButtonOutline type="primary">Hello World!</ButtonOutline>
+      <ButtonOutline size="sm" type="primary">Hello World!</ButtonOutline>
+      <ButtonOutline size="xs" type="primary">Hello World!</ButtonOutline>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-4">
+      <ButtonOutline size="lg" disabled type="secondary">Hello World!</ButtonOutline>
+      <ButtonOutline size="lg" type="secondary">Hello World!</ButtonOutline>
+      <ButtonOutline type="secondary">Hello World!</ButtonOutline>
+      <ButtonOutline size="sm" type="secondary">Hello World!</ButtonOutline>
+      <ButtonOutline size="xs" type="secondary">Hello World!</ButtonOutline>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-4">
+      <ButtonOutline size="lg" disabled type="neutral">Hello World!</ButtonOutline>
+      <ButtonOutline size="lg" type="neutral">Hello World!</ButtonOutline>
+      <ButtonOutline type="neutral">Hello World!</ButtonOutline>
+      <ButtonOutline size="sm" type="neutral">Hello World!</ButtonOutline>
+      <ButtonOutline size="xs" type="neutral">Hello World!</ButtonOutline>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-4">
+      <ButtonOutline size="lg" disabled type="invert">Hello World!</ButtonOutline>
+      <ButtonOutline size="lg" type="invert">Hello World!</ButtonOutline>
+      <ButtonOutline type="invert">Hello World!</ButtonOutline>
+      <ButtonOutline size="sm" type="invert">Hello World!</ButtonOutline>
+      <ButtonOutline size="xs" type="invert">Hello World!</ButtonOutline>
+    </div>
   </div>
 </template>
-
 <script>
-import { ButtonSolid } from 'brickstone';
+import { ButtonSolid, ButtonOutline } from 'brickstone';
 
 export default {
   name: 'App',
   components: {
-    ButtonSolid
+    ButtonSolid,
+    ButtonOutline
   }
 }
 </script>
