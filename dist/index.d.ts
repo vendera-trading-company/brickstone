@@ -1,3 +1,3 @@
-import './index.css';
-import ButtonText from "./components/button/Text.vue";
-export { ButtonText };
+import "./style.css";
+import ButtonSolid from "./components/button/Solid.vue";
+export { ButtonSolid };

@@ -1,14 +1,17 @@
 <template>
-  <ButtonText text="Test"></ButtonText>
+  <div class="flex flex-wrap gap-4 items-center justify-center">
+    <ButtonSolid type="primary">Hello World!</ButtonSolid>
+    <ButtonSolid type="secondary">Hello World!</ButtonSolid>
+  </div>
 </template>
 
 <script>
-import { ButtonText } from 'brickstone';
+import { ButtonSolid } from 'brickstone';
 
 export default {
   name: 'App',
   components: {
-    ButtonText
+    ButtonSolid
   }
 }
 </script>
