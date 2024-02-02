@@ -1,6 +1,6 @@
 {
     "name": "brickstone",
-    "version": "1.0.2",
+    "version": "1.0.5",
     "type": "module",
     "repository": {
         "url": "https://github.com/vendera-trading-company/brickstone"
@@ -11,23 +11,16 @@
         "email": "support@vendera-trading.company"
     },
     "files": [
-        "dist",
-        "lib"
+        "dist"
     ],
     "main": "./dist/brickstone.umd.cjs",
     "module": "./dist/brickstone.js",
     "exports": {
+        "./installer.js": "./lib/installer.js",
+        "./style.css": "./dist/style.css",
         ".": {
             "import": "./dist/brickstone.js",
             "require": "./dist/brickstone.umd.cjs"
-        },
-        "./dist/installer": {
-            "import": "./dist/installer.js",
-            "require": "./dist/installer.js"
-        },
-        "./dist/style.css": {
-            "import": "./dist/style.css",
-            "require": "./dist/style.css"
         },
         "./*": "./dist/*"
     },
@@ -35,14 +28,15 @@
     "scripts": {
         "liveview": "npm run build && cd ./example && npm run dev",
         "dev": "vite",
-        "build": "vite build && vue-tsc --emitDeclarationOnly && cp ./lib/installer.js ./dist/installer.js",
+        "build": "vite build && vue-tsc --emitDeclarationOnly",
         "types": "vue-tsc ",
         "preview": "vite preview",
         "deploy": "vite build && vue-tsc --emitDeclarationOnly && npm publish"
     },
     "dependencies": {
-        "vue": "^3.3.x",
-        "tailwindcss": "^3"
+        "lodash": "^4.17.21",
+        "tailwindcss": "^3",
+        "vue": "^3.3.x"
     },
     "devDependencies": {
         "@types/node": "^20.11.14",
