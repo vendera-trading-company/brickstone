@@ -2,7 +2,7 @@
   <ButtonList></ButtonList>
   <LinkList></LinkList>
   <div class="mx-auto max-w-md flex flex-col items-center justify-center py-12">
-    <bs-date-picker @onchange="onDateSelect" class="max-w-s bg-white p-4 rounded-xl"></bs-date-picker>
+    <bs-date-picker :xdate="new Date(1973, 12, 7)" @onchange="onDateSelect" class="max-w-s bg-white p-4 rounded-xl"></bs-date-picker>
   </div>
 </template>
 <script setup>

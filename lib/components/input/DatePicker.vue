@@ -1,4 +1,7 @@
 <script setup lang="ts">
+defineProps({
+    xdate: { type: Date },
+});
 defineEmits(['onchange']);
 </script>
 <script lang="ts">
@@ -32,10 +35,10 @@ export default {
         }
     },
     data() {
-        var date = new Date();
+        var date = this.xdate ?? new Date();
 
         return {
-            year: date.getFullYear(),
+            year: date.getFullYear() - 1,
             month: date.getMonth() + 1,
             day: date.getDate(),
             date: date,

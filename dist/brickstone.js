@@ -222,9 +222,9 @@ const p = ["disabled"], m = {
     }
   },
   data() {
-    var e = /* @__PURE__ */ new Date();
+    var e = this.xdate ?? /* @__PURE__ */ new Date();
     return {
-      year: e.getFullYear(),
+      year: e.getFullYear() - 1,
       month: e.getMonth() + 1,
       day: e.getDate(),
       date: e
@@ -252,6 +252,9 @@ const p = ["disabled"], m = {
 }, U = /* @__PURE__ */ r({
   ...O,
   __name: "DatePicker",
+  props: {
+    xdate: { type: Date }
+  },
   emits: ["onchange"],
   setup(e) {
     return (t, i) => (a(), l("div", $, [

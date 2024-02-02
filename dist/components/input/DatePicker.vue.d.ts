@@ -1,4 +1,8 @@
-declare const _default: import("vue").DefineComponent<{}, {}, {
+declare const _default: import("vue").DefineComponent<{
+    xdate: {
+        type: DateConstructor;
+    };
+}, {}, {
     year: number;
     month: number;
     day: number;
@@ -10,7 +14,11 @@ declare const _default: import("vue").DefineComponent<{}, {}, {
     calculateDate: () => void;
 }, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     onchange: (...args: any[]) => void;
-}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{}>> & {
+}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<{
+    xdate: {
+        type: DateConstructor;
+    };
+}>> & {
     onOnchange?: ((...args: any[]) => any) | undefined;
 }, {}, {}>;
 export default _default;
