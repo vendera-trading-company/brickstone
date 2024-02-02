@@ -1,6 +1,6 @@
 {
     "name": "brickstone",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "type": "module",
     "repository": {
         "url": "https://github.com/vendera-trading-company/brickstone"
@@ -16,7 +16,7 @@
     "main": "./dist/brickstone.umd.cjs",
     "module": "./dist/brickstone.js",
     "exports": {
-        "./installer.js": "./lib/installer.js",
+        "./installer.js": "./dist/installer.js",
         "./style.css": "./dist/style.css",
         ".": {
             "import": "./dist/brickstone.js",
@@ -28,7 +28,7 @@
     "scripts": {
         "liveview": "npm run build && cd ./example && npm run dev",
         "dev": "vite",
-        "build": "vite build && vue-tsc --emitDeclarationOnly",
+        "build": "vite build && vue-tsc --emitDeclarationOnly && cp ./lib/installer.js ./dist/installer.js",
         "types": "vue-tsc ",
         "preview": "vite preview",
         "deploy": "vite build && vue-tsc --emitDeclarationOnly && npm publish"
