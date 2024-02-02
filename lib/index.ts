@@ -20,5 +20,5 @@ export {
   LinkSolid,
   LinkOutline,
   LinkGhost,
-  DatePicker,
+  DatePicker
 };

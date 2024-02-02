@@ -21,6 +21,10 @@
             "import": "./dist/brickstone.js",
             "require": "./dist/brickstone.umd.cjs"
         },
+        "./dist/installer": {
+            "import": "./dist/installer.js",
+            "require": "./dist/installer.js"
+        },
         "./dist/style.css": {
             "import": "./dist/style.css",
             "require": "./dist/style.css"
@@ -31,7 +35,7 @@
     "scripts": {
         "liveview": "npm run build && cd ./example && npm run dev",
         "dev": "vite",
-        "build": "vite build && vue-tsc --emitDeclarationOnly",
+        "build": "vite build && vue-tsc --emitDeclarationOnly && cp ./lib/installer.js ./dist/installer.js",
         "types": "vue-tsc ",
         "preview": "vite preview",
         "deploy": "vite build && vue-tsc --emitDeclarationOnly && npm publish"
