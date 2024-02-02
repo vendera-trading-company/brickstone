@@ -3,7 +3,7 @@ import { ButtonSolid, ButtonOutline, ButtonGhost } from 'brickstone';
 </script>
 <template>
     <div class="flex flex-col">
-        <p class="mt-12">Solid</p>
+        <p class="mt-12">Button Solid</p>
         <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
             <div class="flex flex-col items-center justify-center gap-4">
                 <ButtonSolid size="lg" disabled type="primary">Hello World!</ButtonSolid>
@@ -34,7 +34,7 @@ import { ButtonSolid, ButtonOutline, ButtonGhost } from 'brickstone';
                 <ButtonSolid size="xs" type="invert">Hello World!</ButtonSolid>
             </div>
         </div>
-        <p class="mt-12">Outline</p>
+        <p class="mt-12">Button Outline</p>
         <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
             <div class="flex flex-col items-center justify-center gap-4">
                 <ButtonOutline size="lg" disabled type="primary">Hello World!</ButtonOutline>
@@ -65,7 +65,7 @@ import { ButtonSolid, ButtonOutline, ButtonGhost } from 'brickstone';
                 <ButtonOutline size="xs" type="invert">Hello World!</ButtonOutline>
             </div>
         </div>
-        <p class="mt-12">Ghost</p>
+        <p class="mt-12">Button Ghost</p>
         <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
             <div class="flex flex-col items-center justify-center gap-4">
                 <ButtonGhost size="lg" disabled type="primary">Hello World!</ButtonGhost>

@@ -1,6 +1,9 @@
 <template>
   <ButtonList></ButtonList>
   <LinkList></LinkList>
+  <div class="mx-auto max-w-md flex flex-col items-center justify-center py-12">
+    <bs-date-picker @onchange="onDateSelect" class="max-w-s bg-white p-4 rounded-xl"></bs-date-picker>
+  </div>
 </template>
 <script setup>
 import ButtonList from './ButtonList.vue';
@@ -9,6 +12,11 @@ import LinkList from './LinkList.vue';
 <script>
 export default {
   name: 'App',
+  methods: {
+    onDateSelect: function (event) {
+      console.log(event.date);
+    }
+  }
 }
 </script>
 
@@ -18,7 +26,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #000;
+  background-color: #EEE;
 }
 </style>

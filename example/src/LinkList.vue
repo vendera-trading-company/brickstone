@@ -3,7 +3,7 @@ import { LinkSolid, LinkOutline, LinkGhost } from 'brickstone';
 </script>
 <template>
     <div class="flex flex-col">
-        <p class="mt-12">Solid Link</p>
+        <p class="mt-12">Link Solid</p>
         <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
             <div class="flex flex-col items-center justify-center gap-4">
                 <LinkSolid href="/" size="lg" disabled type="primary">Hello World!</LinkSolid>
@@ -34,7 +34,7 @@ import { LinkSolid, LinkOutline, LinkGhost } from 'brickstone';
                 <LinkSolid href="/" size="xs" type="invert">Hello World!</LinkSolid>
             </div>
         </div>
-        <p class="mt-12">Outline Link</p>
+        <p class="mt-12">Link Outline</p>
         <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
             <div class="flex flex-col items-center justify-center gap-4">
                 <LinkOutline href="/" size="lg" disabled type="primary">Hello World!</LinkOutline>
@@ -65,7 +65,7 @@ import { LinkSolid, LinkOutline, LinkGhost } from 'brickstone';
                 <LinkOutline href="/" size="xs" type="invert">Hello World!</LinkOutline>
             </div>
         </div>
-        <p class="mt-12">Ghost Link</p>
+        <p class="mt-12">Link Ghost</p>
         <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
             <div class="flex flex-col items-center justify-center gap-4">
                 <LinkGhost href="/" size="lg" disabled type="primary">Hello World!</LinkGhost>

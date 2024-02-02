@@ -6,10 +6,12 @@ import ButtonOutline from "./components/button/Outline.vue";
 import ButtonGhost from "./components/button/Ghost.vue";
 
 /** Links */
-
 import LinkSolid from "./components/link/Solid.vue";
 import LinkOutline from "./components/link/Outline.vue";
 import LinkGhost from "./components/link/Ghost.vue";
+
+/** Inputs */
+import DatePicker from "./components/input/DatePicker.vue";
 
 export {
   ButtonSolid,
@@ -18,4 +20,5 @@ export {
   LinkSolid,
   LinkOutline,
   LinkGhost,
+  DatePicker,
 };
