@@ -13,6 +13,9 @@ import LinkGhost from "./components/link/Ghost.vue";
 /** Inputs */
 import DatePicker from "./components/input/DatePicker.vue";
 
+/** Modal */
+import Modal from "./components/Modal.vue";
+
 export {
   ButtonSolid,
   ButtonOutline,
@@ -20,5 +23,6 @@ export {
   LinkSolid,
   LinkOutline,
   LinkGhost,
-  DatePicker
+  DatePicker,
+  Modal
 };
