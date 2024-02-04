@@ -1,9 +1,11 @@
 <template>
   <ButtonList></ButtonList>
   <LinkList></LinkList>
-  <div class="mx-auto max-w-md flex flex-col items-center justify-center py-12">
+  <p class="mt-12">Date Picker</p>
+  <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
     <bs-date-picker :xdate="new Date(1973, 12, 7)" @onchange="onDateSelect" class="max-w-s bg-white p-4 rounded-xl"></bs-date-picker>
   </div>
+  <div class="py-12"></div>
 </template>
 <script setup>
 import ButtonList from './ButtonList.vue';

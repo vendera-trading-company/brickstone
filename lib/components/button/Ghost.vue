@@ -27,10 +27,10 @@ export default {
     'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none disabled:opacity-30 disabled:pointer-events-none hover:opacity-90 text-black bg-transparent': type == 'invert'
   }">
     <p v-bind:class="{
-      'px-4 py-2 text-xs font-semibold leading-4': size == 'xs',
-      'px-4 py-2 text-sm font-semibold leading-4': size == 'sm',
-      'px-4 py-2 text-base font-semibold leading-7': size == 'md',
-      'px-4 py-2 text-lg font-semibold leading-7': size == 'lg'
+      'px-4 py-2 text-xs hover:underline leading-4': size == 'xs',
+      'px-4 py-2 text-sm hover:underline leading-4': size == 'sm',
+      'px-4 py-2 text-base hover:underline leading-7': size == 'md',
+      'px-4 py-2 text-lg hover:underline leading-7': size == 'lg'
     }">
       <slot />
     </p>
