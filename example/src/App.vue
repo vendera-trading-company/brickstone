@@ -54,7 +54,7 @@
       </bs-button-outline>
     </div>
   </bs-modal>
-  <bs-cookie-hint title="We value your privacy">
+  <bs-cookie-hint title="We value your privacy" policy="/">
 
     We and our 1393 partners use cookies and other tracking technologies to improve your experience on our website. We may
     store and/or access information on a device and process personal data, such as your IP address and browsing data, for
