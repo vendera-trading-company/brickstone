@@ -20,6 +20,9 @@ import Modal from "./components/Modal.vue";
 /** AppBar */
 import AppBar from "./components/AppBar.vue";
 
+/** Cookies */
+import CookieHint from "./components/CookieHint.vue";
+
 export {
   ButtonSolid,
   ButtonOutline,
@@ -31,4 +34,5 @@ export {
   InputText,
   Modal,
   AppBar,
+  CookieHint,
 };

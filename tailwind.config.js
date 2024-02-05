@@ -6,6 +6,7 @@ export default {
       colors: {
         background: "#ffffff",
         error: "#ef4444",
+        border: "#DDDDDD",
         primary: {
           text: "#ffffff",
           100: "#cffafe",

@@ -54,6 +54,17 @@
       </bs-button-outline>
     </div>
   </bs-modal>
+  <bs-cookie-hint title="We value your privacy">
+
+    We and our 1393 partners use cookies and other tracking technologies to improve your experience on our website. We may
+    store and/or access information on a device and process personal data, such as your IP address and browsing data, for
+    personalised advertising and content, advertising and content measurement, audience research and services development.
+    Additionally, we may utilize precise geolocation data and identification through device scanning.
+    <br><br>
+    Please note that your consent will be valid across all our subdomains. You can change or withdraw your consent at any
+    time by clicking the “Consent Preferences” button at the bottom of your screen. We respect your choices and are
+    committed to providing you with a transparent and secure browsing experience. Cookie Policy
+  </bs-cookie-hint>
 </template>
 <script setup>
 import ButtonList from './ButtonList.vue';
@@ -89,5 +100,4 @@ export default {
   text-align: center;
   color: #000;
   background-color: #EEE;
-}
-</style>
+}</style>

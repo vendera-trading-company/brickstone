@@ -6,6 +6,22 @@ defineEmits(['onclose']);
 </script>
 <script lang="ts">
 export default {
+    watch: {
+        open: function (newValue, OldValue) {
+            if (newValue) {
+                document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+            } else {
+                document.getElementsByTagName('body')[0].style.overflow = 'auto';
+            }
+        }
+    },
+    mounted() {
+        if (this.$props.open) {
+            document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+        } else {
+            document.getElementsByTagName('body')[0].style.overflow = 'auto';
+        }
+    },
     methods: {
         onClose: function () {
             this.$emit('onclose');

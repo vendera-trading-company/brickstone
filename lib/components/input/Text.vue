@@ -2,8 +2,8 @@
 defineProps({
     hint: {},
     error: {},
-    id: { type: String, default: 'text' },
-    name: { type: String, default: 'text' },
+    id: { type: String },
+    name: { type: String },
     type: { type: String, default: 'text' },
     title: { type: String, required: true },
     placeholder: { type: String },
