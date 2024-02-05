@@ -8,6 +8,10 @@ defineEmits(['onchange']);
 export default {
     watch: {
         month: function (newVal, oldVal) {
+            if (newVal == oldVal) {
+                return;
+            }
+
             var val = newVal;
             if (val < 1) {
                 val = 1;
@@ -18,9 +22,12 @@ export default {
             }
 
             this.month = val;
-            this.calculateDate();
         },
         year: function (newVal, oldVal) {
+            if (newVal == oldVal) {
+                return;
+            }
+
             var val = newVal;
             if (val < 0) {
                 val = 0;
@@ -31,7 +38,6 @@ export default {
             }
 
             this.year = val;
-            this.calculateDate();
         }
     },
     data() {
@@ -45,6 +51,14 @@ export default {
         }
     },
     methods: {
+        setDate: function (date: any) {
+            Object.assign(this.$data, {
+                year: date.getFullYear() - 1,
+                month: date.getMonth() + 1,
+                day: date.getDate(),
+                date: date,
+            })
+        },
         getCountOfDays: function (_month: number | null = null, _year: number | null = null): number {
             return new Date(_year ?? this.year, _month ?? this.month, 0).getDate()
         },
@@ -57,6 +71,10 @@ export default {
         },
         calculateDate: function () {
             this.date = new Date(this.year, this.month - 1, this.day);
+
+            if (this.day != this.date.getDate()) {
+                this.day = this.date.getDate();
+            }
 
             this.$emit('onchange', {
                 year: this.year,
@@ -71,9 +89,11 @@ export default {
 <template>
     <div class="flex flex-col">
         <div class="flex flex-row items-center p-2 justify-center">
-            <input class="select-none outline-none text-center max-w-32" v-model="month" type="number" />
+            <input @change="calculateDate" class="select-none outline-none text-center max-w-32" v-model="month"
+                type="number" />
             <p class="mx-2">/</p>
-            <input class="select-none outline-none text-center max-w-32" v-model="year" type="number" />
+            <input @change="calculateDate" class="select-none outline-none text-center max-w-32" v-model="year"
+                type="number" />
         </div>
         <div class="grid grid-cols-7 gap-1 mt-2 grid-rows-5">
             <template v-for="(_day) in getCountOfDays()">
