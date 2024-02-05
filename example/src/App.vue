@@ -11,7 +11,7 @@
   <ChipList></ChipList>
   <p class="mt-12">Date Picker</p>
   <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
-    <bs-input-date-picker :xdate="new Date(1973, 12, 7)" @onchange="onDateSelect"
+    <bs-input-date-picker :xdate="new Date(2000, 3, 7)" @onchange="onDateSelect"
       class="max-w-s bg-white p-4 rounded-xl"></bs-input-date-picker>
   </div>
   <p class="mt-12">Modal</p>

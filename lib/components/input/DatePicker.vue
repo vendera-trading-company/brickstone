@@ -44,7 +44,7 @@ export default {
         var date = this.xdate ?? new Date();
 
         return {
-            year: date.getFullYear() - 1,
+            year: date.getFullYear(),
             month: date.getMonth() + 1,
             day: date.getDate(),
             date: date,
@@ -53,7 +53,7 @@ export default {
     methods: {
         setDate: function (date: any) {
             Object.assign(this.$data, {
-                year: date.getFullYear() - 1,
+                year: date.getFullYear(),
                 month: date.getMonth() + 1,
                 day: date.getDate(),
                 date: date,
