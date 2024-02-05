@@ -1,0 +1,43 @@
+<script setup lang="ts">
+defineProps({
+    hint: {},
+    error: {},
+    id: { type: String, default: 'text' },
+    name: { type: String, default: 'text' },
+    type: { type: String, default: 'text' },
+    title: { type: String, required: true },
+    placeholder: { type: String },
+    required: { type: Boolean, default: false },
+    collapsed: { type: Boolean, default: false },
+    xvalue: { type: String }
+});
+</script>
+<script lang="ts">
+export default {
+    data() {
+        return {
+            value: this.$props.xvalue,
+        };
+    }
+}
+</script>
+<template>
+    <div class="flex flex-col items-start max-w-sm w-full">
+        <div v-if="!collapsed" class="h-min flex max-w-40 w-full">
+            <label class=" flex py-1 px-2 text-sm">{{ title }}{{ required ? "*" : "" }}</label>
+        </div>
+        <div class="w-full flex flex-col relative">
+            <input v-bind:class="{
+                'px-4 py-2 text-base leading-7 bg-background outline-none w-full rounded-xl border-2 border-background': !error,
+                'px-4 py-2 text-base leading-7 bg-background outline-none w-full rounded-xl border-2 border-error': error
+            }" :required="required" v-model="value" :type="type" :id="id" :name="name"
+                :placeholder="placeholder ?? title" />
+            <p v-if="hint && !error" class="py-1 px-2 text-xs text-neutral text-start">
+                {{ hint }}
+            </p>
+            <p v-if="error" class="py-1 px-2 text-xs text-error text-start">
+                {{ error }}
+            </p>
+        </div>
+    </div>
+</template>
