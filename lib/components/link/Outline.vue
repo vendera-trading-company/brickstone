@@ -10,7 +10,8 @@ defineProps({
     'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none hover:opacity-90 text-primary-500 border-primary-500 bg-transparent border-2': type == 'primary',
     'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none hover:opacity-90 text-secondary-500 border-secondary-500 bg-transparent border-2': type == 'secondary',
     'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none hover:opacity-90 text-white border-white bg-transparent border-2': type == 'neutral',
-    'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none hover:opacity-90 text-black border-black bg-transparent border-2': type == 'invert'
+    'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none hover:opacity-90 text-black border-black bg-transparent border-2': type == 'invert',
+    'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none hover:opacity-90 text-error border-error bg-transparent border-2': type == 'error'
   }">
     <p v-bind:class="{
       'px-4 py-2 text-xs leading-4': size == 'xs',

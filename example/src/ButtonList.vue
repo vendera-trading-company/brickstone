@@ -33,6 +33,13 @@ import { ButtonSolid, ButtonOutline, ButtonGhost } from 'brickstone';
                 <ButtonSolid size="sm" type="invert">Hello World!</ButtonSolid>
                 <ButtonSolid size="xs" type="invert">Hello World!</ButtonSolid>
             </div>
+            <div class="flex flex-col items-center justify-center gap-4">
+                <ButtonSolid size="lg" disabled type="error">Hello World!</ButtonSolid>
+                <ButtonSolid size="lg" type="error">Hello World!</ButtonSolid>
+                <ButtonSolid type="error">Hello World!</ButtonSolid>
+                <ButtonSolid size="sm" type="error">Hello World!</ButtonSolid>
+                <ButtonSolid size="xs" type="error">Hello World!</ButtonSolid>
+            </div>
         </div>
         <p class="mt-12">Button Outline</p>
         <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
@@ -64,6 +71,13 @@ import { ButtonSolid, ButtonOutline, ButtonGhost } from 'brickstone';
                 <ButtonOutline size="sm" type="invert">Hello World!</ButtonOutline>
                 <ButtonOutline size="xs" type="invert">Hello World!</ButtonOutline>
             </div>
+            <div class="flex flex-col items-center justify-center gap-4">
+                <ButtonOutline size="lg" disabled type="error">Hello World!</ButtonOutline>
+                <ButtonOutline size="lg" type="error">Hello World!</ButtonOutline>
+                <ButtonOutline type="error">Hello World!</ButtonOutline>
+                <ButtonOutline size="sm" type="error">Hello World!</ButtonOutline>
+                <ButtonOutline size="xs" type="error">Hello World!</ButtonOutline>
+            </div>
         </div>
         <p class="mt-12">Button Ghost</p>
         <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
@@ -94,6 +108,13 @@ import { ButtonSolid, ButtonOutline, ButtonGhost } from 'brickstone';
                 <ButtonGhost type="invert">Hello World!</ButtonGhost>
                 <ButtonGhost size="sm" type="invert">Hello World!</ButtonGhost>
                 <ButtonGhost size="xs" type="invert">Hello World!</ButtonGhost>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-4">
+                <ButtonGhost size="lg" disabled type="error">Hello World!</ButtonGhost>
+                <ButtonGhost size="lg" type="error">Hello World!</ButtonGhost>
+                <ButtonGhost type="error">Hello World!</ButtonGhost>
+                <ButtonGhost size="sm" type="error">Hello World!</ButtonGhost>
+                <ButtonGhost size="xs" type="error">Hello World!</ButtonGhost>
             </div>
         </div>
     </div>

@@ -24,7 +24,8 @@ export default {
     'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none disabled:opacity-30 disabled:pointer-events-none hover:opacity-90 text-primary-500 bg-transparent border-2 border-transparent': type == 'primary',
     'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none disabled:opacity-30 disabled:pointer-events-none hover:opacity-90 text-secondary-500 bg-transparent border-2 border-transparent': type == 'secondary',
     'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none disabled:opacity-30 disabled:pointer-events-none hover:opacity-90 text-white bg-transparent border-2 border-transparent': type == 'neutral',
-    'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none disabled:opacity-30 disabled:pointer-events-none hover:opacity-90 text-black bg-transparent border-2 border-transparent': type == 'invert'
+    'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none disabled:opacity-30 disabled:pointer-events-none hover:opacity-90 text-black bg-transparent border-2 border-transparent': type == 'invert',
+    'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none disabled:opacity-30 disabled:pointer-events-none hover:opacity-90 text-error bg-transparent border-2 border-transparent': type == 'error'
   }">
     <p v-bind:class="{
       'px-4 py-2 text-xs hover:underline leading-4': size == 'xs',

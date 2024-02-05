@@ -8,6 +8,7 @@
   </div>
   <ButtonList></ButtonList>
   <LinkList></LinkList>
+  <ChipList></ChipList>
   <p class="mt-12">Date Picker</p>
   <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
     <bs-input-date-picker :xdate="new Date(1973, 12, 7)" @onchange="onDateSelect"
@@ -69,6 +70,7 @@
 <script setup>
 import ButtonList from './ButtonList.vue';
 import LinkList from './LinkList.vue';
+import ChipList from './ChipList.vue';
 </script>
 <script>
 export default {
@@ -100,4 +102,5 @@ export default {
   text-align: center;
   color: #000;
   background-color: #EEE;
-}</style>
+}
+</style>

@@ -29,6 +29,12 @@ import { LinkSolid, LinkOutline, LinkGhost } from 'brickstone';
                 <LinkSolid href="/" size="sm" type="invert">Hello World!</LinkSolid>
                 <LinkSolid href="/" size="xs" type="invert">Hello World!</LinkSolid>
             </div>
+            <div class="flex flex-col items-center justify-center gap-4">
+                <LinkSolid href="/" size="lg" type="error">Hello World!</LinkSolid>
+                <LinkSolid href="/" type="error">Hello World!</LinkSolid>
+                <LinkSolid href="/" size="sm" type="error">Hello World!</LinkSolid>
+                <LinkSolid href="/" size="xs" type="error">Hello World!</LinkSolid>
+            </div>
         </div>
         <p class="mt-12">Link Outline</p>
         <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
@@ -56,6 +62,12 @@ import { LinkSolid, LinkOutline, LinkGhost } from 'brickstone';
                 <LinkOutline href="/" size="sm" type="invert">Hello World!</LinkOutline>
                 <LinkOutline href="/" size="xs" type="invert">Hello World!</LinkOutline>
             </div>
+            <div class="flex flex-col items-center justify-center gap-4">
+                <LinkOutline href="/" size="lg" type="error">Hello World!</LinkOutline>
+                <LinkOutline href="/" type="error">Hello World!</LinkOutline>
+                <LinkOutline href="/" size="sm" type="error">Hello World!</LinkOutline>
+                <LinkOutline href="/" size="xs" type="error">Hello World!</LinkOutline>
+            </div>
         </div>
         <p class="mt-12">Link Ghost</p>
         <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
@@ -82,6 +94,12 @@ import { LinkSolid, LinkOutline, LinkGhost } from 'brickstone';
                 <LinkGhost href="/" type="invert">Hello World!</LinkGhost>
                 <LinkGhost href="/" size="sm" type="invert">Hello World!</LinkGhost>
                 <LinkGhost href="/" size="xs" type="invert">Hello World!</LinkGhost>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-4">
+                <LinkGhost href="/" size="lg" type="error">Hello World!</LinkGhost>
+                <LinkGhost href="/" type="error">Hello World!</LinkGhost>
+                <LinkGhost href="/" size="sm" type="error">Hello World!</LinkGhost>
+                <LinkGhost href="/" size="xs" type="error">Hello World!</LinkGhost>
             </div>
         </div>
     </div>

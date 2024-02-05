@@ -23,6 +23,10 @@ import AppBar from "./components/AppBar.vue";
 /** Cookies */
 import CookieHint from "./components/CookieHint.vue";
 
+/** Chips */
+import ChipSolid from "./components/chip/Solid.vue";
+import ChipOutline from "./components/chip/Outline.vue";
+
 export {
   ButtonSolid,
   ButtonOutline,
@@ -35,4 +39,6 @@ export {
   Modal,
   AppBar,
   CookieHint,
+  ChipSolid,
+  ChipOutline,
 };
