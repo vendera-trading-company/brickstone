@@ -17,6 +17,9 @@ import InputText from "./components/input/Text.vue";
 /** Modal */
 import Modal from "./components/Modal.vue";
 
+/** AppBar */
+import AppBar from "./components/AppBar.vue";
+
 export {
   ButtonSolid,
   ButtonOutline,
@@ -27,4 +30,5 @@ export {
   InputDatePicker,
   InputText,
   Modal,
+  AppBar,
 };
