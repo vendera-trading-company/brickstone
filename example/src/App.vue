@@ -2,9 +2,9 @@
   <bs-app-bar>
     <h1>Brickstone</h1>
   </bs-app-bar>
-  <div id="content" class="bg-primary-500 flex flex-col items-center justify-center h-dvh">
-    <h1 class="text-primary-text text-4xl text-center font-bold">Brickstone</h1>
-    <p class="text-center text-xl mt-2 text-primary-text">VueJs Components by Vendera Trading Company</p>
+  <div id="content" class="bg-background flex flex-col items-center justify-center h-dvh">
+    <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Brickstone</h1>
+    <p class="text-center text-xl mt-2 text-black">VueJs Components by Vendera Trading Company</p>
   </div>
   <ButtonList></ButtonList>
   <LinkList></LinkList>

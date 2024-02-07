@@ -27,6 +27,9 @@ import CookieHint from "./components/CookieHint.vue";
 import ChipSolid from "./components/chip/Solid.vue";
 import ChipOutline from "./components/chip/Outline.vue";
 
+/** Text */
+import TextGradient from "./components/text/Gradient.vue";
+
 export {
   ButtonSolid,
   ButtonOutline,
@@ -41,4 +44,5 @@ export {
   CookieHint,
   ChipSolid,
   ChipOutline,
+  TextGradient,
 };
