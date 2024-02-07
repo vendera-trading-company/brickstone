@@ -1,60 +1,94 @@
 <template>
   <bs-app-bar>
+
     <h1>Brickstone</h1>
+
   </bs-app-bar>
   <div id="content" class="bg-background flex flex-col items-center justify-center h-dvh">
-    <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Brickstone</h1>
-    <p class="text-center text-xl mt-2 text-black">VueJs Components by Vendera Trading Company</p>
+    <bs-animate-slide-in>
+      <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Brickstone</h1>
+    </bs-animate-slide-in>
+    <bs-animate-slide-in class="delay-100">
+      <p class="text-center text-xl mt-2 text-black">VueJs Components by Vendera Trading Company</p>
+    </bs-animate-slide-in>
+
   </div>
   <ButtonList></ButtonList>
   <LinkList></LinkList>
   <ChipList></ChipList>
-  <p class="mt-12">Date Picker</p>
-  <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
-    <bs-input-date-picker :xdate="new Date(2000, 3, 7)" @onchange="onDateSelect"
-      class="max-w-s bg-white p-4 rounded-xl"></bs-input-date-picker>
-  </div>
-  <p class="mt-12">Modal</p>
-  <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
-    <bs-button-solid @onclick="onModalOpen">
-      Open Modal
-    </bs-button-solid>
-  </div>
-  <p class="mt-12">Text Input</p>
-  <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
-    <bs-input-text title="Text Input"></bs-input-text>
-  </div>
-  <p class="mt-12">Text Input Password</p>
-  <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
-    <bs-input-text type="password" title="Text Password Input"></bs-input-text>
-  </div>
-  <p class="mt-12">Text Input Collapsed</p>
-  <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
-    <bs-input-text title="Collapsed Input" collapsed></bs-input-text>
-  </div>
-  <p class="mt-12">Text Input Required</p>
-  <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
-    <bs-input-text title="Text Input" required></bs-input-text>
-  </div>
-  <p class="mt-12">Text Input Hint</p>
-  <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
-    <bs-input-text title="Text Input Hint" hint="Min 8 Characters"></bs-input-text>
-  </div>
-  <p class="mt-12">Text Input Error</p>
-  <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
-    <bs-input-text title="Text Input Error" error="Min 8 Characters"></bs-input-text>
-  </div>
-  <div class="py-12"></div>
-  <bs-modal :open="isModalOpen" @onclose="onModalClose" class="rounded-md">
-    <div class="flex flex-col items-center justify-center p-4">
-      <h1>
-        Test Modal
-      </h1>
-      <bs-button-outline class="mt-4" @onclick="onModalClose">
-        Close Modal
-      </bs-button-outline>
+  <bs-animate-slide-in>
+    <p class="mt-12">Date Picker</p>
+    <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+      <bs-input-date-picker :xdate="new Date(2000, 3, 7)" @onchange="onDateSelect"
+        class="max-w-s bg-white p-4 rounded-xl"></bs-input-date-picker>
     </div>
-  </bs-modal>
+  </bs-animate-slide-in>
+  <bs-animate-slide-in>
+    <p class="mt-12">Modal</p>
+    <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+      <bs-button-solid @onclick="onModalOpen">
+        Open Modal
+      </bs-button-solid>
+    </div>
+  </bs-animate-slide-in>
+  <bs-animate-slide-in>
+    <p class="mt-12">Text Input</p>
+    <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+      <bs-input-text title="Text Input"></bs-input-text>
+    </div>
+  </bs-animate-slide-in>
+  <bs-animate-slide-in>
+    <p class="mt-12">Text Input Password</p>
+    <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+      <bs-input-text type="password" title="Text Password Input"></bs-input-text>
+    </div>
+  </bs-animate-slide-in>
+  <bs-animate-slide-in>
+    <p class="mt-12">Text Input Collapsed</p>
+    <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+      <bs-input-text title="Collapsed Input" collapsed></bs-input-text>
+    </div>
+  </bs-animate-slide-in>
+  <bs-animate-slide-in>
+    <p class="mt-12">Text Input Required</p>
+    <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+      <bs-input-text title="Text Input" required></bs-input-text>
+    </div>
+  </bs-animate-slide-in>
+  <bs-animate-slide-in>
+    <p class="mt-12">Text Input Hint</p>
+    <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+      <bs-input-text title="Text Input Hint" hint="Min 8 Characters"></bs-input-text>
+    </div>
+  </bs-animate-slide-in>
+  <bs-animate-slide-in>
+    <p class="mt-12">Text Input Error</p>
+    <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+      <bs-input-text title="Text Input Error" error="Min 8 Characters"></bs-input-text>
+    </div>
+  </bs-animate-slide-in>
+  <bs-animate-slide-in>
+    <div class="py-12"></div>
+    <bs-modal :open="isModalOpen" @onclose="onModalClose" class="rounded-md">
+      <div class="flex flex-col items-center justify-center p-4">
+        <h1>
+          Test Modal
+        </h1>
+        <bs-button-outline class="mt-4" @onclick="onModalClose">
+          Close Modal
+        </bs-button-outline>
+      </div>
+    </bs-modal>
+  </bs-animate-slide-in>
+  <p class="mt-12">Animate</p>
+  <bs-animate-slide-in>
+    <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
+  </bs-animate-slide-in>
+  <p class="mt-12">Animate Repeat</p>
+  <bs-animate-slide-in :repeat="true">
+    <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
+  </bs-animate-slide-in>
+  <div class="py-12"></div>
   <bs-cookie-hint title="We value your privacy" policy="/">
 
     We and our 1393 partners use cookies and other tracking technologies to improve your experience on our website. We may

@@ -30,6 +30,9 @@ import ChipOutline from "./components/chip/Outline.vue";
 /** Text */
 import TextGradient from "./components/text/Gradient.vue";
 
+/** Animate */
+import AnimateSlideIn from "./components/animate/SlideIn.vue";
+
 export {
   ButtonSolid,
   ButtonOutline,
@@ -45,4 +48,5 @@ export {
   ChipSolid,
   ChipOutline,
   TextGradient,
+  AnimateSlideIn,
 };
