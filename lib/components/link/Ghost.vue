@@ -14,10 +14,10 @@ defineProps({
     'rounded-xl inline-flex h-fit items-center justify-center transition-duration-300 transition focus-visible:outline-none hover:opacity-90 text-error bg-transparent border-2 border-transparent': type == 'error'
   }">
     <p v-bind:class="{
-      'px-4 py-2 text-xs hover:underline leading-4': size == 'xs',
-      'px-4 py-2 text-sm hover:underline leading-4': size == 'sm',
-      'px-4 py-2 text-base hover:underline leading-7': size == 'md',
-      'px-4 py-2 text-lg hover:underline leading-7': size == 'lg'
+      'px-4 py-2 text-xs hover:underline leading-4 w-full': size == 'xs',
+      'px-4 py-2 text-sm hover:underline leading-4 w-full': size == 'sm',
+      'px-4 py-2 text-base hover:underline leading-7 w-full': size == 'md',
+      'px-4 py-2 text-lg hover:underline leading-7 w-full': size == 'lg'
     }">
       <slot />
     </p>

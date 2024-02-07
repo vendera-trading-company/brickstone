@@ -117,6 +117,11 @@ import { ButtonSolid, ButtonOutline, ButtonGhost } from 'brickstone';
                 <ButtonGhost size="xs" type="error">Hello World!</ButtonGhost>
             </div>
         </div>
+        <div class="flex flex-col w-full mx-auto max-w-md gap-4 mt-4">
+            <ButtonSolid size="lg" class="text-start" type="primary">Hello World!</ButtonSolid>
+            <ButtonSolid size="lg" class="text-center" type="primary">Hello World!</ButtonSolid>
+            <ButtonSolid size="lg" class="text-end" type="primary">Hello World!</ButtonSolid>
+        </div>
     </div>
 </template>
 <script>
