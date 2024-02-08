@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "brickstone": "file:..",
+    "highlight.js": "^11.9.0",
     "vue": "^3.2.13"
   },
   "devDependencies": {

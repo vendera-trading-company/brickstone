@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         background: "#ffffff",
+        input: "#DEDEDE",
         error: "#ef4444",
         border: "#DDDDDD",
         primary: {

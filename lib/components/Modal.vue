@@ -10,16 +10,20 @@ export default {
         open: function (newValue, OldValue) {
             if (newValue) {
                 document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+                document.getElementsByTagName('body')[0].style.pointerEvents = 'none';
             } else {
                 document.getElementsByTagName('body')[0].style.overflow = 'auto';
+                document.getElementsByTagName('body')[0].style.pointerEvents = 'auto';
             }
         }
     },
     mounted() {
         if (this.$props.open) {
             document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+            document.getElementsByTagName('body')[0].style.pointerEvents = 'none';
         } else {
             document.getElementsByTagName('body')[0].style.overflow = 'auto';
+            document.getElementsByTagName('body')[0].style.pointerEvents = 'auto';
         }
     },
     methods: {
@@ -30,7 +34,7 @@ export default {
 }
 </script>
 <template>
-    <div v-if="open" class="fixed inset-0 z-50 flex flex-col items-center justify-center">
+    <div v-if="open" class="fixed inset-0 z-50 flex flex-col items-center justify-center pointer-events-auto">
         <div v-on:click="onClose" class="absolute bg-black opacity-30 inset-0 -z-10">
         </div>
         <div v-bind="$attrs" class="max-w-lg w-full no-scroll-bar overflow-y-scroll bg-background">

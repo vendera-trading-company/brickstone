@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         background: "#ffffff",
+        input: "#F4F4F4",
         error: "#ef4444",
         border: "#DDDDDD",
         primary: {

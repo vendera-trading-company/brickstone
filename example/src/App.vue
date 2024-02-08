@@ -1,7 +1,10 @@
 <template>
-  <bs-app-bar>
+  <bs-app-bar class="border-b border-b-border">
 
-    <h1>Brickstone</h1>
+    <h1 class="font-extrabold"> <bs-text-gradient class="from-primary-500 to-secondary-500 bg-gradient-to-br">
+        Brickstone
+      </bs-text-gradient>
+    </h1>
 
   </bs-app-bar>
   <div id="content" class="bg-background flex flex-col items-center justify-center h-dvh">
@@ -17,14 +20,16 @@
     </bs-animate-slide-up>
 
   </div>
-  <ButtonList></ButtonList>
-  <LinkList></LinkList>
-  <ChipList></ChipList>
+  <div class="bg-[#EDEDED] p-4">
+    <ButtonList></ButtonList>
+    <LinkList></LinkList>
+    <ChipList></ChipList>
+  </div>
   <bs-animate-slide-up>
     <p class="mt-12">Date Picker</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-date-picker :xdate="new Date(2000, 3, 7)" @onchange="onDateSelect"
-        class="max-w-s bg-white p-4 rounded-xl"></bs-input-date-picker>
+        class="max-w-s bg-white p-4 rounded-xl border-2 border-border"></bs-input-date-picker>
     </div>
   </bs-animate-slide-up>
   <bs-animate-slide-up>
@@ -71,9 +76,10 @@
       <bs-input-text title="Text Input Error" error="Min 8 Characters"></bs-input-text>
     </div>
   </bs-animate-slide-up>
-  <bs-animate-slide-up>
-    <div class="py-12"></div>
-    <bs-modal :open="isModalOpen" @onclose="onModalClose" class="rounded-md">
+
+  <div class="py-12"></div>
+  <bs-modal :open="isModalOpen" @onclose="onModalClose" class="rounded-md">
+    <bs-animate-slide-up>
       <div class="flex flex-col items-center justify-center p-4">
         <h1>
           Test Modal
@@ -82,28 +88,31 @@
           Close Modal
         </bs-button-outline>
       </div>
-    </bs-modal>
-  </bs-animate-slide-up>
+    </bs-animate-slide-up>
+  </bs-modal>
   <p class="mt-12">Animate</p>
   <bs-animate-slide-up>
     <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
   </bs-animate-slide-up>
   <p class="mt-12">Animate Repeat</p>
-  <bs-animate-slide-up :repeat="true">
+  <bs-animate-slide-up repeat>
     <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
   </bs-animate-slide-up>
-  <div class="overflow-hidden">
+  <div class="overflow-hidden flex flex-col items-center">
     <p class="mt-12">Animate Left Repeat</p>
-    <bs-animate-slide-left :repeat="true">
+    <pre class="text-start">
+    <code v-html="highlightCode('\n<bs-animate-slide-left repeat>\n...\n</bs-animate-slide-left>')"></code>
+   </pre>
+    <bs-animate-slide-left repeat>
       <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
     </bs-animate-slide-left>
     <p class="mt-12">Animate Right Repeat</p>
-    <bs-animate-slide-right :repeat="true">
+    <bs-animate-slide-right repeat>
       <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
     </bs-animate-slide-right>
   </div>
   <p class="mt-12">Animate Down Repeat</p>
-  <bs-animate-slide-down :repeat="true">
+  <bs-animate-slide-down repeat>
     <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
   </bs-animate-slide-down>
   <div class="py-12"></div>
@@ -125,6 +134,15 @@ import LinkList from './LinkList.vue';
 import ChipList from './ChipList.vue';
 </script>
 <script>
+import hljs from 'highlight.js/lib/core';
+import javascript from 'highlight.js/lib/languages/javascript';
+import xml from 'highlight.js/lib/languages/xml';
+import 'highlight.js/styles/github.css';
+
+// Then register the languages you need
+hljs.registerLanguage('javascript', javascript);
+hljs.registerLanguage('xml', xml);
+
 export default {
   name: 'App',
   data() {
@@ -133,6 +151,12 @@ export default {
     };
   },
   methods: {
+    highlightCode: function (value) {
+      return hljs.highlight(
+        value,
+        { language: 'xml' }
+      ).value;
+    },
     onDateSelect: function (event) {
       console.log(event.date);
     },
@@ -153,6 +177,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #000;
-  background-color: #EEE;
+  background-color: #FFF;
 }
 </style>
