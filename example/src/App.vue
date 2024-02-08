@@ -5,69 +5,73 @@
 
   </bs-app-bar>
   <div id="content" class="bg-background flex flex-col items-center justify-center h-dvh">
-    <bs-animate-slide-in>
-      <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Brickstone</h1>
-    </bs-animate-slide-in>
-    <bs-animate-slide-in class="delay-100">
+    <bs-animate-slide-up>
+      <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-extrabold">
+        <bs-text-gradient class="from-primary-500 to-secondary-500 bg-gradient-to-br">
+          Brickstone
+        </bs-text-gradient>
+      </h1>
+    </bs-animate-slide-up>
+    <bs-animate-slide-up class="delay-100">
       <p class="text-center text-xl mt-2 text-black">VueJs Components by Vendera Trading Company</p>
-    </bs-animate-slide-in>
+    </bs-animate-slide-up>
 
   </div>
   <ButtonList></ButtonList>
   <LinkList></LinkList>
   <ChipList></ChipList>
-  <bs-animate-slide-in>
+  <bs-animate-slide-up>
     <p class="mt-12">Date Picker</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-date-picker :xdate="new Date(2000, 3, 7)" @onchange="onDateSelect"
         class="max-w-s bg-white p-4 rounded-xl"></bs-input-date-picker>
     </div>
-  </bs-animate-slide-in>
-  <bs-animate-slide-in>
+  </bs-animate-slide-up>
+  <bs-animate-slide-up>
     <p class="mt-12">Modal</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-button-solid @onclick="onModalOpen">
         Open Modal
       </bs-button-solid>
     </div>
-  </bs-animate-slide-in>
-  <bs-animate-slide-in>
+  </bs-animate-slide-up>
+  <bs-animate-slide-up>
     <p class="mt-12">Text Input</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text title="Text Input"></bs-input-text>
     </div>
-  </bs-animate-slide-in>
-  <bs-animate-slide-in>
+  </bs-animate-slide-up>
+  <bs-animate-slide-up>
     <p class="mt-12">Text Input Password</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text type="password" title="Text Password Input"></bs-input-text>
     </div>
-  </bs-animate-slide-in>
-  <bs-animate-slide-in>
+  </bs-animate-slide-up>
+  <bs-animate-slide-up>
     <p class="mt-12">Text Input Collapsed</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text title="Collapsed Input" collapsed></bs-input-text>
     </div>
-  </bs-animate-slide-in>
-  <bs-animate-slide-in>
+  </bs-animate-slide-up>
+  <bs-animate-slide-up>
     <p class="mt-12">Text Input Required</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text title="Text Input" required></bs-input-text>
     </div>
-  </bs-animate-slide-in>
-  <bs-animate-slide-in>
+  </bs-animate-slide-up>
+  <bs-animate-slide-up>
     <p class="mt-12">Text Input Hint</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text title="Text Input Hint" hint="Min 8 Characters"></bs-input-text>
     </div>
-  </bs-animate-slide-in>
-  <bs-animate-slide-in>
+  </bs-animate-slide-up>
+  <bs-animate-slide-up>
     <p class="mt-12">Text Input Error</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text title="Text Input Error" error="Min 8 Characters"></bs-input-text>
     </div>
-  </bs-animate-slide-in>
-  <bs-animate-slide-in>
+  </bs-animate-slide-up>
+  <bs-animate-slide-up>
     <div class="py-12"></div>
     <bs-modal :open="isModalOpen" @onclose="onModalClose" class="rounded-md">
       <div class="flex flex-col items-center justify-center p-4">
@@ -79,15 +83,29 @@
         </bs-button-outline>
       </div>
     </bs-modal>
-  </bs-animate-slide-in>
+  </bs-animate-slide-up>
   <p class="mt-12">Animate</p>
-  <bs-animate-slide-in>
+  <bs-animate-slide-up>
     <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
-  </bs-animate-slide-in>
+  </bs-animate-slide-up>
   <p class="mt-12">Animate Repeat</p>
-  <bs-animate-slide-in :repeat="true">
+  <bs-animate-slide-up :repeat="true">
     <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
-  </bs-animate-slide-in>
+  </bs-animate-slide-up>
+  <div class="overflow-hidden">
+    <p class="mt-12">Animate Left Repeat</p>
+    <bs-animate-slide-left :repeat="true">
+      <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
+    </bs-animate-slide-left>
+    <p class="mt-12">Animate Right Repeat</p>
+    <bs-animate-slide-right :repeat="true">
+      <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
+    </bs-animate-slide-right>
+  </div>
+  <p class="mt-12">Animate Down Repeat</p>
+  <bs-animate-slide-down :repeat="true">
+    <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
+  </bs-animate-slide-down>
   <div class="py-12"></div>
   <bs-cookie-hint title="We value your privacy" policy="/">
 

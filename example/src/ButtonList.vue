@@ -3,7 +3,7 @@ import { ButtonSolid, ButtonOutline, ButtonGhost } from 'brickstone';
 </script>
 <template>
     <div class="flex flex-col">
-        <bs-animate-slide-in>
+        <bs-animate-slide-up>
             <p class="mt-12">Button Solid</p>
             <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
                 <div class="flex flex-col items-center justify-center gap-4">
@@ -42,8 +42,8 @@ import { ButtonSolid, ButtonOutline, ButtonGhost } from 'brickstone';
                     <ButtonSolid size="xs" type="error">Hello World!</ButtonSolid>
                 </div>
             </div>
-        </bs-animate-slide-in>
-        <bs-animate-slide-in>
+        </bs-animate-slide-up>
+        <bs-animate-slide-up>
             <p class="mt-12">Button Outline</p>
             <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
                 <div class="flex flex-col items-center justify-center gap-4">
@@ -82,8 +82,8 @@ import { ButtonSolid, ButtonOutline, ButtonGhost } from 'brickstone';
                     <ButtonOutline size="xs" type="error">Hello World!</ButtonOutline>
                 </div>
             </div>
-        </bs-animate-slide-in>
-        <bs-animate-slide-in>
+        </bs-animate-slide-up>
+        <bs-animate-slide-up>
             <p class="mt-12">Button Ghost</p>
             <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
                 <div class="flex flex-col items-center justify-center gap-4">
@@ -122,14 +122,14 @@ import { ButtonSolid, ButtonOutline, ButtonGhost } from 'brickstone';
                     <ButtonGhost size="xs" type="error">Hello World!</ButtonGhost>
                 </div>
             </div>
-        </bs-animate-slide-in>
-        <bs-animate-slide-in>
+        </bs-animate-slide-up>
+        <bs-animate-slide-up>
             <div class="flex flex-col w-full mx-auto max-w-md gap-4 mt-4">
                 <ButtonSolid size="lg" class="text-start" type="primary">Hello World!</ButtonSolid>
                 <ButtonSolid size="lg" class="text-center" type="primary">Hello World!</ButtonSolid>
                 <ButtonSolid size="lg" class="text-end" type="primary">Hello World!</ButtonSolid>
             </div>
-        </bs-animate-slide-in>
+        </bs-animate-slide-up>
     </div>
 </template>
 <script>

@@ -3,7 +3,7 @@ import { ChipSolid, ChipOutline } from 'brickstone';
 </script>
 <template>
     <div class="flex flex-col">
-        <bs-animate-slide-in>
+        <bs-animate-slide-up>
             <p class="mt-12">Chip Solid</p>
             <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
                 <div class="flex flex-col items-center justify-center gap-4">
@@ -42,8 +42,8 @@ import { ChipSolid, ChipOutline } from 'brickstone';
                     <ChipSolid size="xs" type="error">Hello World!</ChipSolid>
                 </div>
             </div>
-        </bs-animate-slide-in>
-        <bs-animate-slide-in>
+        </bs-animate-slide-up>
+        <bs-animate-slide-up>
             <p class="mt-12">Chip Outline</p>
             <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
                 <div class="flex flex-col items-center justify-center gap-4">
@@ -82,7 +82,7 @@ import { ChipSolid, ChipOutline } from 'brickstone';
                     <ChipOutline size="xs" type="error">Hello World!</ChipOutline>
                 </div>
             </div>
-        </bs-animate-slide-in>
+        </bs-animate-slide-up>
     </div>
 </template>
 <script>

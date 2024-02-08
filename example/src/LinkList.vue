@@ -3,7 +3,7 @@ import { LinkSolid, LinkOutline, LinkGhost } from 'brickstone';
 </script>
 <template>
     <div class="flex flex-col">
-        <bs-animate-slide-in>
+        <bs-animate-slide-up>
             <p class="mt-12">Link Solid</p>
             <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
                 <div class="flex flex-col items-center justify-center gap-4">
@@ -37,8 +37,8 @@ import { LinkSolid, LinkOutline, LinkGhost } from 'brickstone';
                     <LinkSolid href="/" size="xs" type="error">Hello World!</LinkSolid>
                 </div>
             </div>
-        </bs-animate-slide-in>
-        <bs-animate-slide-in>
+        </bs-animate-slide-up>
+        <bs-animate-slide-up>
             <p class="mt-12">Link Outline</p>
             <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
                 <div class="flex flex-col items-center justify-center gap-4">
@@ -72,8 +72,8 @@ import { LinkSolid, LinkOutline, LinkGhost } from 'brickstone';
                     <LinkOutline href="/" size="xs" type="error">Hello World!</LinkOutline>
                 </div>
             </div>
-        </bs-animate-slide-in>
-        <bs-animate-slide-in>
+        </bs-animate-slide-up>
+        <bs-animate-slide-up>
             <p class="mt-12">Link Ghost</p>
             <div class="flex flex-wrap gap-4 items-center justify-center mt-4">
                 <div class="flex flex-col items-center justify-center gap-4">
@@ -107,7 +107,7 @@ import { LinkSolid, LinkOutline, LinkGhost } from 'brickstone';
                     <LinkGhost href="/" size="xs" type="error">Hello World!</LinkGhost>
                 </div>
             </div>
-        </bs-animate-slide-in>
+        </bs-animate-slide-up>
     </div>
 </template>
 <script>

@@ -31,7 +31,10 @@ import ChipOutline from "./components/chip/Outline.vue";
 import TextGradient from "./components/text/Gradient.vue";
 
 /** Animate */
-import AnimateSlideIn from "./components/animate/SlideIn.vue";
+import AnimateSlideUp from "./components/animate/SlideUp.vue";
+import AnimateSlideDown from "./components/animate/SlideDown.vue";
+import AnimateSlideLeft from "./components/animate/SlideLeft.vue";
+import AnimateSlideRight from "./components/animate/SlideRight.vue";
 
 export {
   ButtonSolid,
@@ -48,5 +51,8 @@ export {
   ChipSolid,
   ChipOutline,
   TextGradient,
-  AnimateSlideIn,
+  AnimateSlideUp,
+  AnimateSlideDown,
+  AnimateSlideLeft,
+  AnimateSlideRight,
 };
