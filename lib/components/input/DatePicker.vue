@@ -2,7 +2,7 @@
 defineProps({
     xdate: { type: Date },
 });
-defineEmits(['onchange']);
+defineEmits(['onchange', 'onday']);
 </script>
 <script lang="ts">
 export default {
@@ -51,6 +51,14 @@ export default {
         }
     },
     methods: {
+        onClickDay: function () {
+            this.$emit('onday', {
+                year: this.year,
+                month: this.month,
+                day: this.day,
+                date: this.date,
+            });
+        },
         setDate: function (date: any) {
             Object.assign(this.$data, {
                 year: date.getFullYear(),
@@ -68,6 +76,7 @@ export default {
         setDay: function (_day: number) {
             this.day = _day;
             this.calculateDate();
+            this.onClickDay();
         },
         calculateDate: function () {
             this.date = new Date(this.year, this.month - 1, this.day);

@@ -4,14 +4,13 @@ defineProps({
     error: {},
     id: { type: String },
     name: { type: String },
-    type: { type: String, default: 'text' },
     title: { type: String, required: true },
     placeholder: { type: String },
     required: { type: Boolean, default: false },
     collapsed: { type: Boolean, default: false },
     xvalue: { type: String }
 });
-defineEmits(['input']);
+defineEmits(['onchange']);
 </script>
 <script lang="ts">
 export default {
@@ -21,8 +20,8 @@ export default {
         };
     },
     methods: {
-        onInput: function (event: any) {
-            this.$emit('input', event);
+        onChange: function (event: any) {
+            this.$emit('onchange', event);
         }
     }
 }
@@ -33,11 +32,12 @@ export default {
             <label class=" flex py-1 px-2 text-sm">{{ title }}{{ required ? "*" : "" }}</label>
         </div>
         <div class="w-full flex flex-col relative">
-            <input @input="onInput" v-bind:class="{
-                'px-4 py-2 text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-input': !error,
-                'px-4 py-2 text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-error': error
-            }" :required="required" v-model="value" :type="type" :id="id" :name="name"
-                :placeholder="placeholder ?? title" />
+            <select @change="onChange" v-bind:class="{
+                'px-4 py-[12.4px] text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-input cursor-pointer': !error,
+                'px-4 py-[12.4px] text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-error cursor-pointer': error
+            }" :required="required" v-model="value" :id="id" :name="name">
+                <slot />
+            </select>
             <p v-if="hint && !error" class="py-1 px-2 text-xs text-neutral text-start">
                 {{ hint }}
             </p>

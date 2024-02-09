@@ -41,37 +41,57 @@
     </div>
   </bs-animate-slide-up>
   <bs-animate-slide-up>
-    <p class="mt-12">Text Input</p>
+    <p class="mt-12">Input Select</p>
+    <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+      <bs-input-select :xvalue="select_input" title="Select Input">
+        <bs-input-select-option value="test_1">
+          Test 1
+        </bs-input-select-option>
+        <bs-input-select-option value="test_2">
+          Test 2
+        </bs-input-select-option>
+        <bs-input-select-option value="test_3">
+          Test 3
+        </bs-input-select-option>
+      </bs-input-select>
+    </div>
+  </bs-animate-slide-up>
+  <p class="mt-12">Input Date</p>
+  <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+    <bs-input-date modal="rounded-md" picker="bg-white p-4 rounded-xl" @onchange="onDateSelect" title="Date Input"></bs-input-date>
+  </div>
+  <bs-animate-slide-up>
+    <p class="mt-12">Input Text</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text title="Text Input"></bs-input-text>
     </div>
   </bs-animate-slide-up>
   <bs-animate-slide-up>
-    <p class="mt-12">Text Input Password</p>
+    <p class="mt-12">Input Text Password</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text type="password" title="Text Password Input"></bs-input-text>
     </div>
   </bs-animate-slide-up>
   <bs-animate-slide-up>
-    <p class="mt-12">Text Input Collapsed</p>
+    <p class="mt-12">Input Text Collapsed</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text title="Collapsed Input" collapsed></bs-input-text>
     </div>
   </bs-animate-slide-up>
   <bs-animate-slide-up>
-    <p class="mt-12">Text Input Required</p>
+    <p class="mt-12">Input Text Required</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text title="Text Input" required></bs-input-text>
     </div>
   </bs-animate-slide-up>
   <bs-animate-slide-up>
-    <p class="mt-12">Text Input Hint</p>
+    <p class="mt-12">Input Text Hint</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text title="Text Input Hint" hint="Min 8 Characters"></bs-input-text>
     </div>
   </bs-animate-slide-up>
   <bs-animate-slide-up>
-    <p class="mt-12">Text Input Error</p>
+    <p class="mt-12">Input Text Error</p>
     <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
       <bs-input-text title="Text Input Error" error="Min 8 Characters"></bs-input-text>
     </div>
@@ -92,11 +112,11 @@
   </bs-modal>
   <p class="mt-12">Animate</p>
   <bs-animate-slide-up>
-    <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
+    <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold p-2">Slide Up</h1>
   </bs-animate-slide-up>
   <p class="mt-12">Animate Repeat</p>
   <bs-animate-slide-up repeat>
-    <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
+    <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold p-2">Slide Up</h1>
   </bs-animate-slide-up>
   <div class="overflow-hidden flex flex-col items-center">
     <p class="mt-12">Animate Left Repeat</p>
@@ -104,16 +124,16 @@
     <code v-html="highlightCode('\n<bs-animate-slide-left repeat>\n...\n</bs-animate-slide-left>')"></code>
    </pre>
     <bs-animate-slide-left repeat>
-      <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
+      <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold p-2">Slide Left</h1>
     </bs-animate-slide-left>
     <p class="mt-12">Animate Right Repeat</p>
     <bs-animate-slide-right repeat>
-      <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
+      <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold p-2">Slide Right</h1>
     </bs-animate-slide-right>
   </div>
   <p class="mt-12">Animate Down Repeat</p>
   <bs-animate-slide-down repeat>
-    <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold">Slide In</h1>
+    <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold p-2">Slide Down</h1>
   </bs-animate-slide-down>
   <div class="py-12"></div>
   <bs-cookie-hint title="We value your privacy" policy="/">
@@ -148,6 +168,7 @@ export default {
   data() {
     return {
       isModalOpen: false,
+      select_input: 'test_1'
     };
   },
   methods: {

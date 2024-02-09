@@ -13,6 +13,9 @@ import LinkGhost from "./components/link/Ghost.vue";
 /** Inputs */
 import InputDatePicker from "./components/input/DatePicker.vue";
 import InputText from "./components/input/Text.vue";
+import InputDate from "./components/input/Date.vue";
+import InputSelect from "./components/input/Select.vue";
+import InputSelectOption from "./components/input/Select/Option.vue";
 
 /** Modal */
 import Modal from "./components/Modal.vue";
@@ -45,6 +48,7 @@ export {
   LinkGhost,
   InputDatePicker,
   InputText,
+  InputDate,
   Modal,
   AppBar,
   CookieHint,
@@ -55,4 +59,6 @@ export {
   AnimateSlideDown,
   AnimateSlideLeft,
   AnimateSlideRight,
+  InputSelect,
+  InputSelectOption,
 };
