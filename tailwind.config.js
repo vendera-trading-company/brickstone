@@ -4,6 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        neutral: "#fff",
+        invert: "#000",
         background: "#ffffff",
         input: "#DEDEDE",
         error: "#ef4444",

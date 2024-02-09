@@ -48,7 +48,7 @@ export default {
                 <ButtonSolid @onclick="onAccept" size="sm" class="w-full">Accept All</ButtonSolid>
                 <ButtonOutline @onclick="onReject" class="mt-2 w-full" size="sm">Reject All</ButtonOutline>
                 <div v-if="policy" class="mt-2 w-full">
-                    <LinkGhost :href="policy" class="w-full" size="sm">Cookie Policy</LinkGhost>
+                    <LinkGhost :href="policy" class="w-full text-center" size="sm">Cookie Policy</LinkGhost>
                 </div>
             </div>
         </div>

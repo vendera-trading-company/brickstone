@@ -8,6 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        neutral: "#fff",
+        invert: "#000",
         background: "#ffffff",
         input: "#F4F4F4",
         error: "#ef4444",

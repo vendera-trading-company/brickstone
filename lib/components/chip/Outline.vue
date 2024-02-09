@@ -14,8 +14,8 @@ defineProps({
         <div v-bind:class="{
             'rounded-full border-2 border-primary-600 bg-transparent text-primary-600': type == 'primary',
             'rounded-full border-2 border-secondary-600 bg-transparent text-secondary-600': type == 'secondary',
-            'rounded-full border-2 border-white bg-transparent text-white': type == 'neutral',
-            'rounded-full border-2 border-black bg-transparent text-black': type == 'invert',
+            'rounded-full border-2 border-neutral bg-transparent text-neutral': type == 'neutral',
+            'rounded-full border-2 border-invert bg-transparent text-invert': type == 'invert',
             'rounded-full border-2 border-error bg-transparent text-error': type == 'error'
         }">
             <p v-bind:class="{

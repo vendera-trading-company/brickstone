@@ -77,7 +77,7 @@ export default {
                     {{ title }}
                 </template>
             </div>
-            <p v-if="hint && !error" class="py-1 px-2 text-xs text-neutral text-start">
+            <p v-if="hint && !error" class="py-1 px-2 text-xs text-invert text-start">
                 {{ hint }}
             </p>
             <p v-if="error" class="py-1 px-2 text-xs text-error text-start">
