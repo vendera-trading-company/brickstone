@@ -138,6 +138,15 @@
       <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-bold p-2">Slide Down</h1>
     </bs-animate-slide-down>
     <div class="py-12"></div>
+    <bs-element-contact type="primary" @onsubmit="logEvent" title="Brickstone"
+      content="Hey cool that you discovered Brickstone. We look forward to your message!"></bs-element-contact>
+    <bs-element-contact type="secondary" @onsubmit="logEvent" title="Brickstone"
+      content="Hey cool that you discovered Brickstone. We look forward to your message!"></bs-element-contact>
+    <bs-element-contact type="neutral" @onsubmit="logEvent" title="Brickstone"
+      content="Hey cool that you discovered Brickstone. We look forward to your message!"></bs-element-contact>
+    <bs-element-contact type="invert" @onsubmit="logEvent" title="Brickstone"
+      content="Hey cool that you discovered Brickstone. We look forward to your message!"></bs-element-contact>
+    <div class="py-12"></div>
   </div>
   <bs-cookie-hint title="We value your privacy" policy="/">
 
@@ -183,6 +192,9 @@ export default {
     },
     onDateSelect: function (event) {
       console.log(event.date);
+    },
+    logEvent: function (event) {
+      console.log(event);
     },
     onModalOpen: function () {
       this.isModalOpen = true;

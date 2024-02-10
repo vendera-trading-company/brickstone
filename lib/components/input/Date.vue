@@ -67,8 +67,8 @@ export default {
         </div>
         <div class="w-full flex flex-col relative">
             <div v-on:click="openModal" v-bind:class="{
-                'px-4 py-2 text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-input text-start cursor-pointer': !error,
-                'px-4 py-2 text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-error text-start cursor-pointer': error
+                'px-4 py-2 text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-input text-start cursor-pointer text-invert': !error,
+                'px-4 py-2 text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-error text-start cursor-pointer text-invert': error
             }">
                 <template v-if="placeholder || value">
                     {{ value ? dateToString(value) : dateToString(placeholder) }}
@@ -77,7 +77,7 @@ export default {
                     {{ title }}
                 </template>
             </div>
-            <p v-if="hint && !error" class="py-1 px-2 text-xs text-invert text-start">
+            <p v-if="hint && !error" class="py-1 px-2 text-xs text-start">
                 {{ hint }}
             </p>
             <p v-if="error" class="py-1 px-2 text-xs text-error text-start">

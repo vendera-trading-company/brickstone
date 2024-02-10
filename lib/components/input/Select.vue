@@ -33,12 +33,12 @@ export default {
         </div>
         <div class="w-full flex flex-col relative">
             <select @change="onChange" v-bind:class="{
-                'px-4 py-[12.4px] text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-input cursor-pointer': !error,
-                'px-4 py-[12.4px] text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-error cursor-pointer': error
+                'px-4 py-[12.4px] text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-input cursor-pointer text-invert': !error,
+                'px-4 py-[12.4px] text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-error cursor-pointer text-invert': error
             }" :required="required" v-model="value" :id="id" :name="name">
                 <slot />
             </select>
-            <p v-if="hint && !error" class="py-1 px-2 text-xs text-invert text-start">
+            <p v-if="hint && !error" class="py-1 px-2 text-xs text-start">
                 {{ hint }}
             </p>
             <p v-if="error" class="py-1 px-2 text-xs text-error text-start">

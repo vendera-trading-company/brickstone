@@ -39,6 +39,9 @@ import AnimateSlideDown from "./components/animate/SlideDown.vue";
 import AnimateSlideLeft from "./components/animate/SlideLeft.vue";
 import AnimateSlideRight from "./components/animate/SlideRight.vue";
 
+/** Elements */
+import ElementContact from "./components/element/Contact.vue";
+
 export {
   ButtonSolid,
   ButtonOutline,
@@ -61,4 +64,5 @@ export {
   AnimateSlideRight,
   InputSelect,
   InputSelectOption,
+  ElementContact,
 };
