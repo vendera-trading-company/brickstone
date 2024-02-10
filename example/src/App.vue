@@ -7,7 +7,7 @@
     </h1>
 
   </bs-app-bar>
-  <div id="content" class="bg-background flex flex-col items-center justify-center h-dvh">
+  <bs-element-header id="content" type="transparent" class="flex flex-col items-center justify-center">
     <bs-animate-slide-up>
       <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-extrabold">
         <bs-text-gradient class="from-primary-500 to-secondary-500 bg-gradient-to-br">
@@ -18,8 +18,7 @@
     <bs-animate-slide-up class="delay-100">
       <p class="text-center text-xl mt-2 text-black">VueJs Components by Vendera Trading Company</p>
     </bs-animate-slide-up>
-
-  </div>
+  </bs-element-header>
   <div class="text-center">
     <div class="bg-[#EDEDED] p-4">
       <ButtonList></ButtonList>
@@ -146,6 +145,35 @@
       content="Hey cool that you discovered Brickstone. We look forward to your message!"></bs-element-contact>
     <bs-element-contact type="invert" @onsubmit="logEvent" title="Brickstone"
       content="Hey cool that you discovered Brickstone. We look forward to your message!"></bs-element-contact>
+    <bs-element-contact type="transparent" @onsubmit="logEvent" title="Brickstone"
+      content="Hey cool that you discovered Brickstone. We look forward to your message!"></bs-element-contact>
+    <bs-element-section type="primary" class="min-h-32 flex flex-col justify-center">
+      Element Section Primary
+    </bs-element-section>
+    <bs-element-section type="secondary" class="min-h-32 flex flex-col justify-center">
+      Element Section Secondary
+    </bs-element-section>
+    <bs-element-section type="neutral" class="min-h-32 flex flex-col justify-center">
+      Element Section Neutral
+    </bs-element-section>
+    <bs-element-section type="invert" class="min-h-32 flex flex-col justify-center">
+      Element Section Invert
+    </bs-element-section>
+    <bs-element-section type="transparent" class="min-h-32 flex flex-col justify-center">
+      Element Section Transparent
+    </bs-element-section>
+    <bs-element-section type="primary" class="min-h-32 flex flex-col items-start p-4">
+      <bs-button-solid type="secondary">
+        Element Section No Container
+      </bs-button-solid>
+    </bs-element-section>
+    <bs-element-section type="primary" class="min-h-32 flex flex-col items-start p-4 mt-12">
+      <bs-element-container>
+        <bs-button-solid type="secondary">
+          Element Section Container
+        </bs-button-solid>
+      </bs-element-container>
+    </bs-element-section>
     <div class="py-12"></div>
   </div>
   <bs-cookie-hint title="We value your privacy" policy="/">

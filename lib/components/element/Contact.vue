@@ -3,6 +3,7 @@ import InputText from '../input/Text.vue';
 import ButtonSolid from '../button/Solid.vue';
 import SlideUp from '../animate/SlideUp.vue';
 import Input from '../input/Input';
+import Section from './Section.vue';
 import { ref } from 'vue'
 
 const name = ref<Input | null>(null);
@@ -10,7 +11,7 @@ const email = ref<Input | null>(null);
 const text = ref<Input | null>(null);
 
 defineProps({
-    type: { type: String, default: 'primary' },
+    type: { type: String, default: 'transparent' },
     title: { type: String },
     content: { type: String }
 });
@@ -38,12 +39,7 @@ export default {
 }
 </script>
 <template>
-    <section v-bind:class="{
-        'bg-primary-500 text-primary-text overflow-hidden': type == 'primary',
-        'bg-secondary-500 text-secondary-text overflow-hidden': type == 'secondary',
-        'bg-neutral text-invert overflow-hidden': type == 'neutral',
-        'bg-invert text-neutral overflow-hidden': type == 'invert'
-    }">
+    <Section :type="type">
         <SlideUp>
             <div class="max-w-screen-md p-4 grid md:grid-cols-2 w-full mx-auto gap-8">
                 <div class="flex flex-col text-start">
@@ -59,5 +55,5 @@ export default {
                 </div>
             </div>
         </SlideUp>
-    </section>
+    </Section>
 </template>

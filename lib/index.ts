@@ -40,6 +40,9 @@ import AnimateSlideLeft from "./components/animate/SlideLeft.vue";
 import AnimateSlideRight from "./components/animate/SlideRight.vue";
 
 /** Elements */
+import ElementSection from "./components/element/Section.vue";
+import ElementHeader from "./components/element/Header.vue";
+import ElementContainer from "./components/element/Container.vue";
 import ElementContact from "./components/element/Contact.vue";
 
 export {
@@ -65,4 +68,7 @@ export {
   InputSelect,
   InputSelectOption,
   ElementContact,
+  ElementSection,
+  ElementHeader,
+  ElementContainer
 };
