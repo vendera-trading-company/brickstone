@@ -45,6 +45,7 @@ import AnimateSlideRight from "./components/animate/SlideRight.vue";
 /** Elements */
 import ElementSection from "./components/element/Section.vue";
 import ElementHeader from "./components/element/Header.vue";
+import ElementFooter from "./components/element/Footer.vue";
 import ElementContainer from "./components/element/Container.vue";
 import ElementContact from "./components/element/Contact.vue";
 
@@ -75,4 +76,5 @@ export {
   ElementSection,
   ElementHeader,
   ElementContainer,
+  ElementFooter
 };

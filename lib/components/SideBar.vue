@@ -9,6 +9,8 @@ export default {
 
         const header = document.getElementById("header");
 
+        const footer = document.getElementById("footer");
+
         const appbar = document.getElementById("appbar");
 
         if (sidebar && content) {
@@ -17,6 +19,10 @@ export default {
 
         if (sidebar && header) {
             header.style.paddingLeft = sidebar.clientWidth + "px";
+        }
+
+        if (sidebar && footer) {
+            footer.style.paddingLeft = sidebar.clientWidth + "px";
         }
 
         if (sidebar && appbar) {

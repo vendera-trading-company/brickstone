@@ -193,6 +193,11 @@
     </bs-element-section>
     <div class="py-12"></div>
   </div>
+  <bs-element-footer>
+    <bs-element-container>
+      <p class="text-center p-4">Vendera Trading Company</p>
+    </bs-element-container>
+  </bs-element-footer>
   <bs-cookie-hint title="We value your privacy" policy="/">
 
     We and our 1393 partners use cookies and other tracking technologies to improve your experience on our website. We may
