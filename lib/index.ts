@@ -74,5 +74,5 @@ export {
   ElementContact,
   ElementSection,
   ElementHeader,
-  ElementContainer
+  ElementContainer,
 };
