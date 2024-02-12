@@ -7,7 +7,7 @@ defineProps({
 export default {}
 </script>
 <template>
-    <header v-bind:class="{
+    <header id="header" v-bind:class="{
         'bg-primary-500 text-primary-text overflow-hidden min-h-svh w-full': type == 'primary',
         'bg-secondary-500 text-secondary-text overflow-hidden min-h-svh w-full': type == 'secondary',
         'bg-neutral text-invert overflow-hidden min-h-svh w-full': type == 'neutral',

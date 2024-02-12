@@ -23,6 +23,9 @@ import Modal from "./components/Modal.vue";
 /** AppBar */
 import AppBar from "./components/AppBar.vue";
 
+/** SideBar */
+import SideBar from "./components/SideBar.vue";
+
 /** Cookies */
 import CookieHint from "./components/CookieHint.vue";
 
@@ -57,6 +60,7 @@ export {
   InputDate,
   Modal,
   AppBar,
+  SideBar,
   CookieHint,
   ChipSolid,
   ChipOutline,

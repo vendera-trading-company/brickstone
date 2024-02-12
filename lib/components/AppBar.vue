@@ -5,10 +5,15 @@ export default {
     mounted() {
         const appbar = document.getElementById("appbar");
 
+        const header = document.getElementById("header");
         const content = document.getElementById("content");
 
-        if (appbar && content) {
-            content.style.paddingTop = appbar.clientHeight + "px";
+        if (appbar && header) {
+            header.style.paddingTop = appbar.clientHeight + "px";
+        } else {
+            if (appbar && content) {
+                content.style.paddingTop = appbar.clientHeight + "px";
+            }
         }
     },
 }

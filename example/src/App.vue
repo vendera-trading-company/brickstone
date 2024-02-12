@@ -1,13 +1,30 @@
 <template>
-  <bs-app-bar class="border-b border-b-border">
-
-    <h1 class="font-extrabold"> <bs-text-gradient class="from-primary-500 to-secondary-500 bg-gradient-to-br">
-        Brickstone
-      </bs-text-gradient>
-    </h1>
+  <bs-app-bar class="border-b border-b-border border-l border-l-border">
+    <template v-slot:leading>
+      <bs-animate-slide-down>
+        <h1 class="font-extrabold"> <bs-text-gradient class="from-primary-500 to-secondary-500 bg-gradient-to-br">
+            Brickstone
+          </bs-text-gradient>
+        </h1>
+      </bs-animate-slide-down>
+    </template>
 
   </bs-app-bar>
-  <bs-element-header id="content" type="transparent" class="flex flex-col items-center justify-center">
+  <bs-side-bar class="max-w-xs border-r border-r-border">
+    <template v-slot:leading>
+      <bs-animate-slide-right>
+        <h1 class="font-extrabold">
+          <bs-text-gradient class="from-primary-500 to-secondary-500 bg-gradient-to-br">
+            SideBar
+          </bs-text-gradient>
+        </h1>
+      </bs-animate-slide-right>
+    </template>
+    <bs-animate-slide-right>
+      <p>Test</p>
+    </bs-animate-slide-right>
+  </bs-side-bar>
+  <bs-element-header type="transparent" class="flex flex-col items-center justify-center">
     <bs-animate-slide-up>
       <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-extrabold">
         <bs-text-gradient class="from-primary-500 to-secondary-500 bg-gradient-to-br">
@@ -19,7 +36,7 @@
       <p class="text-center text-xl mt-2 text-black">VueJs Components by Vendera Trading Company</p>
     </bs-animate-slide-up>
   </bs-element-header>
-  <div class="text-center">
+  <div id="content" class="text-center">
     <div class="bg-[#EDEDED] p-4">
       <ButtonList></ButtonList>
       <LinkList></LinkList>
