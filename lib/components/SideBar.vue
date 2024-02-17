@@ -28,6 +28,17 @@ export default {
         if (sidebar && appbar) {
             appbar.style.left = sidebar.clientWidth + "px";
         }
+
+        if (sidebar) {
+            const elements = document.getElementsByClassName("left-safe");
+
+            for (var i = 0; i < elements.length; i++) {
+                const element = elements[i] as HTMLElement;
+                if (element) {
+                    element.style.paddingLeft = sidebar.clientWidth + "px";
+                }
+            }
+        }
     },
 }
 </script>

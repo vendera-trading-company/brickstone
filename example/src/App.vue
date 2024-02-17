@@ -1,5 +1,5 @@
 <template>
-  <bs-app-bar class="border-b border-b-border border-l border-l-border">
+  <bs-app-bar type="blur" class="border-l border-l-border bg-background">
     <template v-slot:leading>
       <bs-animate-slide-down>
         <h1 class="font-extrabold"> <bs-text-gradient class="from-primary-500 to-secondary-500 bg-gradient-to-br">
@@ -25,6 +25,24 @@
     </bs-animate-slide-right>
   </bs-side-bar>
   <bs-element-header type="transparent" class="flex flex-col items-center justify-center">
+    <div class="absolute inset-0 left-safe opacity-10">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 widthOfContainer heightOfContainer">
+        <defs>
+          <pattern id="mmmotif-pattern" width="40" height="40" patternUnits="userSpaceOnUse"
+            patternTransform="translate(0 0) scale(1) rotate(45) skewX(0) skewY(0)">
+            <path
+              d="M18.2565 9.41648C19.2197 8.87581 20.7813 8.87581 21.7445 9.41648L29.9098 14L20.0005 19.5625L10.0912 14L18.2565 9.41648Z"
+              fill="#06b6d4"></path>
+            <path d="M10.0908 14L20.0001 19.5625V31.5625L11.8348 26.979C10.8716 26.4383 10.0908 25.1046 10.0908 24V14Z"
+              fill="#63e8ff"></path>
+            <path d="M20 19.5625L29.9093 14V24C29.9093 25.1046 29.1285 26.4383 28.1653 26.979L20 31.5625V19.5625Z"
+              fill="#0086a3"></path>
+          </pattern>
+        </defs>
+        <rect  x="0" y="0" width="100%" height="100%" fill="url(#mmmotif-pattern)"></rect>
+      </svg>
+    </div>
     <bs-animate-slide-up>
       <h1 class="text-primary-black text-4xl lg:text-7xl text-center font-extrabold">
         <bs-text-gradient class="from-primary-500 to-secondary-500 bg-gradient-to-br">
@@ -256,10 +274,8 @@ export default {
 }
 </script>
 
-<style>
-#app {
+<style>#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-</style>
+}</style>
