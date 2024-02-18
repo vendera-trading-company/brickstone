@@ -13,6 +13,7 @@ import LinkGhost from "./components/link/Ghost.vue";
 /** Inputs */
 import InputDatePicker from "./components/input/DatePicker.vue";
 import InputText from "./components/input/Text.vue";
+import InputImage from "./components/input/Image.vue";
 import InputDate from "./components/input/Date.vue";
 import InputSelect from "./components/input/Select.vue";
 import InputSelectOption from "./components/input/Select/Option.vue";
@@ -59,6 +60,7 @@ export {
   InputDatePicker,
   InputText,
   InputDate,
+  InputImage,
   Modal,
   AppBar,
   SideBar,

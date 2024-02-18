@@ -103,6 +103,12 @@
       </div>
     </bs-animate-slide-up>
     <bs-animate-slide-up>
+      <p class="mt-12">Input Image</p>
+      <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+        <bs-input-image title="Input Image"></bs-input-image>
+      </div>
+    </bs-animate-slide-up>
+    <bs-animate-slide-up>
       <p class="mt-12">Input Text Password</p>
       <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
         <bs-input-text type="password" title="Text Password Input"></bs-input-text>
