@@ -62,8 +62,8 @@ export default {
                 <img :src="value ?? placeholder" class="w-full h-full max-h-56 object-contain" />
             </div>
             <input :accept="accept" v-on:change="onSelect" v-bind:class="{
-                'px-4 py-2 text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-input text-invert': !error,
-                'px-4 py-2 text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-error text-invert': error
+                'cursor-pointer px-4 py-2 text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-input text-invert': !error,
+                'cursor-pointer px-4 py-2 text-base leading-7 bg-input outline-none w-full rounded-xl border-2 border-error text-invert': error
             }" :required="required" :type="type" :id="id" :name="name" />
             <p v-if="hint && !error" class="py-1 px-2 text-xs text-start">
                 {{ hint }}
