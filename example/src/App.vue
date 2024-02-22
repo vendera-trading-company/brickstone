@@ -26,8 +26,9 @@
   </bs-side-bar>
   <bs-element-header type="transparent" class="flex flex-col items-center justify-center">
     <div class="absolute inset-0 left-safe opacity-10">
-      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-        xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 widthOfContainer heightOfContainer">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"
+        viewBox="0 0 widthOfContainer heightOfContainer">
         <defs>
           <pattern id="mmmotif-pattern" width="40" height="40" patternUnits="userSpaceOnUse"
             patternTransform="translate(0 0) scale(1) rotate(45) skewX(0) skewY(0)">
@@ -40,7 +41,7 @@
               fill="#0086a3"></path>
           </pattern>
         </defs>
-        <rect  x="0" y="0" width="100%" height="100%" fill="url(#mmmotif-pattern)"></rect>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#mmmotif-pattern)"></rect>
       </svg>
     </div>
     <bs-animate-slide-up>
@@ -105,7 +106,13 @@
     <bs-animate-slide-up>
       <p class="mt-12">Input Image</p>
       <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
-        <bs-input-image title="Input Image"></bs-input-image>
+        <bs-input-image @onselect="logEvent" title="Input Image"></bs-input-image>
+      </div>
+    </bs-animate-slide-up>
+    <bs-animate-slide-up>
+      <p class="mt-12">Input Images</p>
+      <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+        <bs-input-images @onselect="logEvent" title="Input Images"></bs-input-images>
       </div>
     </bs-animate-slide-up>
     <bs-animate-slide-up>
@@ -268,7 +275,7 @@ export default {
       console.log(event.date);
     },
     logEvent: function (event) {
-      console.log(event);
+      console.log('Event', event);
     },
     onModalOpen: function () {
       this.isModalOpen = true;
@@ -280,7 +287,8 @@ export default {
 }
 </script>
 
-<style>#app {
+<style>
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
