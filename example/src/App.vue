@@ -8,9 +8,16 @@
         </h1>
       </bs-animate-slide-down>
     </template>
-
+    <div>
+      <bs-button-solid v-if="!isSideBarOpen" @onclick="openSideBar">
+        Open SideBar
+      </bs-button-solid>
+      <bs-button-solid v-if="isSideBarOpen" @onclick="closeSideBar">
+        Close SideBar
+      </bs-button-solid>
+    </div>
   </bs-app-bar>
-  <bs-side-bar class="max-w-xs border-r border-r-border">
+  <bs-side-bar :open="isSideBarOpen" class="border-r border-r-border">
     <template v-slot:leading>
       <bs-animate-slide-right>
         <h1 class="font-extrabold">
@@ -261,10 +268,17 @@ export default {
   data() {
     return {
       isModalOpen: false,
-      select_input: 'test_1'
+      select_input: 'test_1',
+      isSideBarOpen: false,
     };
   },
   methods: {
+    openSideBar: function () {
+      this.isSideBarOpen = true;
+    },
+    closeSideBar: function () {
+      this.isSideBarOpen = false;
+    },
     highlightCode: function (value) {
       return hljs.highlight(
         value,
@@ -292,4 +306,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}</style>
+}
+</style>
