@@ -1,6 +1,6 @@
 {
     "name": "brickstone",
-    "version": "1.0.34",
+    "version": "1.0.35",
     "type": "module",
     "repository": {
         "url": "https://github.com/vendera-trading-company/brickstone"
@@ -36,6 +36,7 @@
     },
     "dependencies": {
         "@vueuse/core": "^10.7.2",
+        "axios": "^1.6.7",
         "buffer": "^6.0.3",
         "lodash": "^4.17.21",
         "tailwindcss": "^3",

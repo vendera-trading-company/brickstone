@@ -1,5 +1,9 @@
 import "./style.css";
 
+import BSRequest from "./utils/BSRequest";
+import BSResponse from "./utils/BSResponse";
+import LoadingOverlay from "./utils/LoadingOverlay";
+
 /** Buttons */
 import ButtonSolid from "./components/button/Solid.vue";
 import ButtonOutline from "./components/button/Outline.vue";
@@ -80,5 +84,8 @@ export {
   ElementSection,
   ElementHeader,
   ElementContainer,
-  ElementFooter
+  ElementFooter,
+  BSRequest,
+  BSResponse,
+  LoadingOverlay,
 };

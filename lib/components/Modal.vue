@@ -18,6 +18,9 @@ export default {
         }
     },
     mounted() {
+        this.$el.parentNode?.removeChild(this.$el);
+        document.body.appendChild(this.$el);
+
         if (this.$props.open) {
             document.getElementsByTagName('body')[0].style.overflow = 'hidden';
             document.getElementsByTagName('body')[0].style.pointerEvents = 'none';

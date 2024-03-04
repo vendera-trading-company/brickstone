@@ -99,11 +99,13 @@
         </bs-input-select>
       </div>
     </bs-animate-slide-up>
-    <p class="mt-12">Input Date</p>
-    <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
-      <bs-input-date modal="rounded-md" picker="bg-white p-4 rounded-xl" @onchange="onDateSelect"
-        title="Date Input"></bs-input-date>
-    </div>
+    <bs-animate-slide-up>
+      <p class="mt-12">Input Date</p>
+      <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
+        <bs-input-date modal="rounded-md" picker="bg-white p-4 rounded-xl" @onchange="onDateSelect"
+          title="Date Input"></bs-input-date>
+      </div>
+    </bs-animate-slide-up>
     <bs-animate-slide-up>
       <p class="mt-12">Input Text</p>
       <div class="mx-auto max-w-md flex flex-col items-center justify-center mt-4">
